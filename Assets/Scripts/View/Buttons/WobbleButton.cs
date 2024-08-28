@@ -4,8 +4,11 @@ using DG.Tweening;
 
 namespace View.Buttons
 {
+    [RequireComponent(typeof(Button))]
     public class WobbleButton : MonoBehaviour, IButtonEffect
     {
+        [SerializeField] private float power = 0.2f;
+        [SerializeField] private float duration = 0.3f;
         private Button button;
 
         private void Awake()
@@ -16,13 +19,13 @@ namespace View.Buttons
         
         public void Notify(bool correct)
         {
-            if (!correct) Wobble();
-        }
-
-        private void Wobble()
-        {
+            if (correct)
+            {
+                return;
+            }
+            
             transform.DOKill();
-            transform.DOPunchScale(new Vector3(0.1f, 0.1f, 0), 0.5f, 10, 1);
+            transform.DOPunchScale(Vector3.one * power, duration);
         }
-    }
+    }   
 }

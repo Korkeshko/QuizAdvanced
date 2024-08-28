@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 
@@ -32,5 +29,7 @@ namespace View
         {
             text.text = $"Attempts: {count}";
         }
+
+        public int Count => count;
     }
 }

@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 7423773588681409298}
   - component: {fileID: 8708764947284022093}
   - component: {fileID: 5241338868901372728}
-  - component: {fileID: 3728127902727149959}
-  - component: {fileID: -3602238374876892025}
+  - component: {fileID: 2154155014461860488}
   m_Layer: 5
   m_Name: Answer Button
   m_TagString: Untagged
@@ -124,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3728127902727149959
+--- !u!114 &2154155014461860488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,21 +132,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1539085179962913486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f8feb9305e7b54ab12671125ec2ad4, type: 3}
+  m_Script: {fileID: 11500000, guid: 99b027e5ad5eddc4881a3094b12091ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-3602238374876892025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539085179962913486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864003976a25ed54d8f5831d0c99e872, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  answerText: {fileID: 9167322427242464255}
 --- !u!1 &5859839771350221541
 GameObject:
   m_ObjectHideFlags: 0
