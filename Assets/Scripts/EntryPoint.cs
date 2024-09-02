@@ -5,6 +5,7 @@ using Quizs.Fails;
 using Quizs.QuizSources;
 using UnityEngine;
 using View;
+using View.LeaderBoards;
 
 
 public class EntryPoint : MonoBehaviour
@@ -14,6 +15,7 @@ public class EntryPoint : MonoBehaviour
     [SerializeField] private Attempts attempts;
     [SerializeField] private float rewardTime;
     [SerializeField] private float suspendNextQuestion;
+    [SerializeField] private SubmitLeaderView submitLeaderView;
 
     IEnumerator Start()
     {
@@ -57,6 +59,7 @@ public class EntryPoint : MonoBehaviour
 
         quizView.gameObject.SetActive(false);
         timer.gameObject.SetActive(false);
+        submitLeaderView.gameObject.SetActive(true);
     }
 
     private IEnumerator WaitAny(params IEnumerator[] items)
