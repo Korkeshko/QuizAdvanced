@@ -3,6 +3,7 @@ using UnityEngine;
 using Editor.Compiles.Uses.Android;
 using Editor.Compiles.Structure;
 using Editor.Compiles.Uses;
+using Editor.Compiles.Uses.WebGL;
 
 namespace Editor.Compiles
 {
@@ -23,7 +24,15 @@ namespace Editor.Compiles
                 new ExtentionFolderPath(
                     new SimpleCompileFactory(BuildTarget.StandaloneWindows64), 
                     ".exe"
-                )             
+                ),
+                new ExtentionFolderPath(
+                    new SimpleCompileFactory(BuildTarget.WebGL),
+                    ".html" 
+                ),
+                new ExtentionFolderPath(
+                    new WebGLCompileFactory(), 
+                    ".html"
+                )              
             ).Compile(
                 EditorUtility.OpenFolderPanel(
                     "Select Folder",
