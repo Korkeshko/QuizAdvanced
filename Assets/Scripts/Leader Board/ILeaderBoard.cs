@@ -5,7 +5,7 @@ namespace LeaderBoard
 {
     public interface ILeaderBoard
     {
-        public Task NoteAsync(string name, float time);
+        public Task NoteAsync(string name, float time, int attempts);
         public Task<IReadOnlyList<LeaderBoardData>> GetLeaderBoardAsync();
     }
 
@@ -13,5 +13,6 @@ namespace LeaderBoard
     {
         public string Name { get; set; }
         public float Time { get; set; }
+        public int Attempts { get; set; }
     }
 }

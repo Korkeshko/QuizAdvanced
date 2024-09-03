@@ -1032,6 +1032,7 @@ MonoBehaviour:
   nameField: {fileID: 624547718}
   timer: {fileID: 416745560}
   button: {fileID: 39771951}
+  attempts: {fileID: 1361682619}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,13 +11,12 @@ namespace LeaderBoard
             throw new System.NotImplementedException();
         }
 
-        public async Task NoteAsync(string name, float time)
+        public async Task NoteAsync(string name, float time, int attempts)
         {
             await Task.Run(() =>
             {
-                Debug.Log($"{name} {time}");
+                Debug.Log($"Имя: {name} Время: {time} Оставшиеся попытки: {attempts}");
             });
         }
     }
 }
-
